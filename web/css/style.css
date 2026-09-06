@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 70px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero h1 span {
+    color: #f59e0b;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #f59e0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d97706;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    width: 200px;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ================= LOGIN / REGISTER ================= */
+
+.form-page {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+    padding: 30px;
+}
+
+.form-box {
+    width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.form-box input:focus {
+    outline: none;
+    border-color: #f59e0b;
+}
+
+.form-btn {
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MENU ================= */
+
+.menu-page {
+    min-height: calc(100vh - 70px);
+    padding: 50px 8%;
+    background: #f8f9fa;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.menu-header h1 {
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.menu-header p {
+    color: #666;
+    font-size: 17px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.food-image {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    background: #fff7ed;
+}
+
+.food-info {
+    padding: 22px;
+}
+
+.category {
+    font-size: 12px;
+    color: #d97706;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.food-info h2 {
+    margin: 8px 0;
+    color: #111827;
+}
+
+.food-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.food-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.add-btn {
+    border: none;
+    background: #f59e0b;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #d97706;
+}
